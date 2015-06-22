@@ -5,7 +5,11 @@
     <title>Test by zupra</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    
+  
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css" >
+    
     <link href='http://fonts.googleapis.com/css?family=Comfortaa&subset=latin,cyrillic' rel='stylesheet'>
 
 <style>
@@ -344,7 +348,6 @@ $(function(){
     (function(){
 
 
-        // http://jakearchibald.com/2013/animated-line-drawing-svg/
         var progressPath = document.querySelector('.progress path');
         var pathLength = progressPath.getTotalLength();
         progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
@@ -411,39 +414,8 @@ $(function(){
                             });
                 }
 
-
-                /*
-                 if ($elm.data('timeout')) {
-                 window.setTimeout(function(){
-                 $elm.addClass('animated ' + $elm.data('animation'));
-                 }, parseInt($elm.data('timeout'),10));
-                 }
-                 */
-
             });
-            // Hidden
-            /*
-             $(".WAW.animated").on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-             $(this).removeClass('animated ' + $(this).data('animation'));
-             });
-             */
-
-            /*
-             $(".WAW.animated").each(function () {
-             var $elm = $(this),
-             elTopPage = $elm.offset().top;
-             if (scrolled > (elTopPage - winH) ) {
-             $elm.removeClass('animated ' + $elm.data('animation'));
-             }
-
-             });
-
-             */
-
-
         }
-
-
     }());
 });
 </script>
